@@ -1,5 +1,5 @@
 'use strict';
-const PROXY_TAG = 'connection-guard-8617ee';
+const PROXY_TAG = 'connection-guard-1940c3';
 function createObservable(target) {
   const log = [];
   return new Proxy(target, {

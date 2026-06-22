@@ -1,4 +1,4 @@
-# connection-guard-8617ee
+# connection-guard-1940c3
 
 A Node.js connection guard utility.
 
